@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="descuentos.css" />
+    <title>Platzi Descuentos y Porcentajes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <container class="container">
+      <header class="container__header">
+        <h1>Platzi Descuentos y Porcentajes</h1>
+      </header>
+
+      <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+      <div class="container__div--form">
+        <form class="container__form" action="#">
+          <label class="container__form--label" for="inputPrice"
+            >Escribe el precio de tu producto</label
+          >
+          <input
+            class="form-control"
+            id="inputPrice"
+            type="number"
+            placeholder="Precio"
+          />
+
+          <label class="container__form--label" for="inputDiscount"
+            >Escribe el descuento del producto
+          </label>
+          <input
+            class="form-control"
+            id="inputDiscount"
+            type="number"
+            placeholder="Descuento"
+          />
+          <button class="btn-grad" type="button" onclick="clickPrecioTotal()">
+            Calcular el precio con descuento
+          </button>
+          <p id="precioTotal"></p>
+        </form>
+      </div>
+
+      <script src="decuentos.js"></script>
+    </container>
+  </body>
+</html>
